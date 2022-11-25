@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">USERID</th>
+        <th scope="col">ID</th>
+        <th scope="col">TITLE</th>
+        <th scope="col">COMPLETED STATUS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <th scope="row">{{i.userId}}</th>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.completed}}</td>
+      </tr>
+    </tbody>
+  </table>
