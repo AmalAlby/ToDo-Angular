@@ -7,6 +7,8 @@ import { AddtodoComponent } from './addtodo/addtodo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewtodoComponent } from './viewtodo/viewtodo.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const myroute:Routes=[
   {
@@ -29,7 +31,9 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
